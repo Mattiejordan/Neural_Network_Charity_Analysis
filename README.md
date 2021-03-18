@@ -1,23 +1,5 @@
 # Neural_Network_Charity_Analysis
 
-/Overview of the analysis: Explain the purpose of this analysis.
-
-Results: Using bulleted lists and images to support your answers, 
-address the following questions.
-
-/Data Preprocessing
-/What variable(s) are considered the target(s) for your model?
-/What variable(s) are considered to be the features for your model?
-/What variable(s) are neither targets nor features, and should be removed from the input data?
-/Compiling, Training, and Evaluating the Model
-/How many neurons, layers, and activation functions did you select 
-for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
-Summary: Summarize the overall results of the deep learning model. 
-Include a recommendation for how a different model could solve this 
-classification problem, and explain your recommendation.
-
 
 Alphabet Soup's business team has some information Beks needs to create
 a binary classifier to predict whether certain applicants will be
@@ -44,3 +26,14 @@ These features were not needed:
 
 The focus of this analysis is targeted upon this column:
 * IS_SUCCESSFUL—Was the money used effectively
+
+For this project I used four dense hidden node layers at 24, 12, 10, and 5 saved at 5 epochs.
+![D4](D4.PNG)
+I found that increasing the number of layers reduced the accuracy percentage.
+Through this model performance, the best accuracy I could achieve was still below 75% at about *64%.*
+Many trials with increasing and decreasing nodes and layers as well as modifiying classification counts
+ and replacing applications were taken. 
+
+Overall my results from this model were close to the 75% accuracy goal, but still fell short.
+My suggestion for a different model would to be modifying the epoch numbers or to 
+elminate more columns from the original CSV file for a more concise database. 
